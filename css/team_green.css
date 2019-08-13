@@ -1,3 +1,7 @@
+    body {
+        background-color: #344A5D;
+    }
+    
     .header {
         height: 100px;
         background-color: #344A5D;
@@ -12,24 +16,13 @@
     .team_name h1 {
         display: block;
         float: none;
-        vertical-align: middle;
-        text-align: center;
+        /* vertical-align: middle; */
+        /* text-align: center; */
         /*		padding-top:25px;*/
         position: absolute;
         top: 25px;
         left: 50%;
-        transform: translate(-50% -50%);
-    }
-    
-    @media screen and (max-width:640px) {
-        .team_name h1 {
-            padding-top: 25px;
-            position: absolute;
-            top: 0px;
-            left: 50%;
-            margin-left: -32px;
-            /*        transform: translate(-50% -50%);*/
-        }
+        transform: translate(-50%, 0%);
     }
     
     .menu {
@@ -82,7 +75,57 @@
         opacity: 0;
     }
     
+    .container {
+        background-color: #344A5D;
+    }
+    
+    .now_score {
+        background-color: #2C3F50;
+        color: white;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .now_score h1,
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .recent_record {
+        padding: 20px 0;
+    }
+    
+    .recent_record h1 {
+        color: white;
+        text-align: center;
+    }
+    
+    table {
+        background-color: #fff;
+        color: #bdc0ba;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    th,
+    td {
+        border-bottom: 1px solid #efeeee;
+    }
+    
     @media screen and (max-width:640px) {
+        .team_name h1 {
+            padding-top: 25px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -32px;
+            transform: translate(0%, 0%);
+            /* transform: translate(-50%, -50%); */
+        }
         .show_menu_btn,
         .hide_menu_btn {
             display: block;
